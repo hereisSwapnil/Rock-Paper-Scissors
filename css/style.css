@@ -27,7 +27,7 @@
     border-radius: 15px;
     display: flex;
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     /* This will give a sapce between the two items */
     justify-content: space-between;
     /* This will align items to center */
@@ -61,7 +61,7 @@
     background-position: center;
     background-image: url("assets/triangle.png");
     background-repeat: no-repeat;
-    margin: 30px;
+    margin-top: 20px;
     /* border: 1px solid white; */
     width: 500px;
     display: flex;
