@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <!-- This will hold the full game div -->
@@ -17,7 +17,7 @@
         <div class="scoreboard">
             <!-- This will store the title of the logo or site -->
             <div class="title">
-                <img src="/assets/logo.png" alt="">
+                <img src="assets/images/logo.png" alt="">
             </div>
             <!-- Here this will display the score -->
             <div class="score">
@@ -29,13 +29,13 @@
         <!-- this is the way we use onclick function -->
         <div class="hands">
             <div class="hand rock">
-                <img src="/assets/rock.png" alt="" style="width: 200px;" onclick="pickUserHand('rock')">
+                <img src="assets/images/rock.png" alt="" style="width: 200px;" onclick="pickUserHand('rock')">
             </div>
             <div class="hand paper">
-                <img src="/assets/paper.png" alt="" style="width: 200px;" onclick="pickUserHand('paper')">
+                <img src="assets/images/paper.png" alt="" style="width: 200px;" onclick="pickUserHand('paper')">
             </div>
             <div class="hand scissors">
-                <img src="/assets/scissors.png" alt="" style="width: 200px;" onclick="pickUserHand('scissors')">
+                <img src="assets/images/scissors.png" alt="" style="width: 200px;" onclick="pickUserHand('scissors')">
             </div>
         </div>
 
@@ -45,7 +45,7 @@
             <div class="userhand">
                 <h1>YOU PICKED</h1>
                 <div class="imageresultbox">
-                    <img src="/assets/paper.png" alt="" id="userimage">
+                    <img src="assets/images/paper.png" alt="" id="userimage">
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
             <div class="computerhand">
                 <h1>COMPUTER PICKED</h1>
                 <div class="imageresultbox">
-                    <img src="/assets/rock.png" alt="" id="computerimage">
+                    <img src="assets/images/rock.png" alt="" id="computerimage">
                 </div>
             </div>
         </div>
@@ -66,6 +66,6 @@
     </div>
 
     <!-- including the script index.js file -->
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
