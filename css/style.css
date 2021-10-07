@@ -1,0 +1,141 @@
+*{
+    /* These two done so as to remove all the paddings and margins and stretch the full screen */
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper{
+    /* here vw stands for view width and this will set view width to 100  */
+    width: 100vw;
+    /* here vh stands for view height and this will set view height to 100 */
+    height: 100vh;
+    /* This can be copied from gradient generator online tools */
+    background: rgb(90,95,226);
+    background: linear-gradient(180deg, rgba(90,95,226,1) 0%, rgba(56,48,119,1) 50%, rgba(15,11,45,1) 100%);
+    /*  */
+    display: flex;
+    /* This will display everything in column */
+    flex-direction: column;
+    /* This will align items in center */
+    align-items: center;
+}
+
+.scoreboard{
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    padding: 30px;
+    margin-top: 40px;
+    /* This will give a sapce between the two items */
+    justify-content: space-between;
+    /* This will align items to center */
+    align-items: center;
+}
+
+.score{
+    width: 100px;
+    height: 70px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score h1{
+    color: #5352ed;
+    font-size: 40px;
+}
+
+.score h2{
+    font-size: 20px;
+    color: #637081;
+    letter-spacing: 2.5px;
+}
+
+.hands{
+    background-position: center;
+    background-image: url("assets/triangle.png");
+    background-repeat: no-repeat;
+    margin: 30px;
+    /* border: 1px solid white; */
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hands .hand{
+    /* changes the cursor to pointer when above it */
+    cursor: pointer;
+    /* this controls the transition time of animation */
+    transition: all 0.25s;
+}
+
+.hands .hand:hover{
+    /* Transforms 3d image */
+    transform: translate3d(0px,-8px,0px);;
+}
+
+.result{
+    margin-top: 50px;
+    /* border: 1px solid white; */
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    display: none;
+}
+
+.result img{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.result h1{
+    color: white;
+}
+
+.userhand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.computerhand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matchresulttell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.matchresulttell h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.newgame{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+
+.newgame:hover{
+    background-color: antiquewhite;
+    transform: translate3d(0px,-8px,0px);;
+}

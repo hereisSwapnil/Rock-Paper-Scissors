@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- This will hold the full game div -->
+    <div class="wrapper">
+        <!-- Here the score div is present -->
+        <div class="scoreboard">
+            <!-- This will store the title of the logo or site -->
+            <div class="title">
+                <img src="/assets/logo.png" alt="">
+            </div>
+            <!-- Here this will display the score -->
+            <div class="score">
+                <h2>SCORE</h2>
+                <h1>0</h1>
+            </div>
+        </div>
+        <!-- here all the hands like rock paper and scissors are present -->
+        <!-- this is the way we use onclick function -->
+        <div class="hands">
+            <div class="hand rock">
+                <img src="/assets/rock.png" alt="" style="width: 200px;" onclick="pickUserHand('rock')">
+            </div>
+            <div class="hand paper">
+                <img src="/assets/paper.png" alt="" style="width: 200px;" onclick="pickUserHand('paper')">
+            </div>
+            <div class="hand scissors">
+                <img src="/assets/scissors.png" alt="" style="width: 200px;" onclick="pickUserHand('scissors')">
+            </div>
+        </div>
+
+            <!-- The result section that displays the result with a play again button -->
+
+        <div class="result">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="imageresultbox">
+                    <img src="/assets/paper.png" alt="" id="userimage">
+                </div>
+            </div>
+
+            <div class="matchresulttell">
+                <div class="decision"><h1>YOU WIN</h1></div>
+                <div class="newgame" onclick="playAgain()">PLAY AGAIN</div>
+            </div>
+
+            <div class="computerhand">
+                <h1>COMPUTER PICKED</h1>
+                <div class="imageresultbox">
+                    <img src="/assets/rock.png" alt="" id="computerimage">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- including the script index.js file -->
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
