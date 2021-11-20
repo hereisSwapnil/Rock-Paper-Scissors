@@ -30,7 +30,6 @@
     margin-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    /*margin-top: 20px;*/
     /* This will give a sapce between the two items */
     justify-content: space-between;
     /* This will align items to center */
@@ -75,15 +74,15 @@
     background-repeat: no-repeat;
     margin-top: 20px;
     /* border: 1px solid white;  */
-    width: 50vw;
+    width: 35vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .hands img{
-    width: 17vw;
-    min-width: 140px;
+    width: 15vw;
+    min-width: 110px;
 }
 
 .hands .hand{
@@ -194,7 +193,7 @@
     .result{
         margin: 0;
         padding: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     .result h1{
@@ -225,8 +224,14 @@
 }
 
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 798px) {
     .hands{
         background-image: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hand img{
+        margin: 0px;
     }
 }
